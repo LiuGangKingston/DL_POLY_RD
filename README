@@ -23,4 +23,4 @@ The components of each stress tensor are outputted in columns with the format:
 
 The units are k-atm.Ang^3 irrespective of the units used in the input files.
 
-NB. Long-range electrostatics must be handled by the standard Ewald summation (SPME and HKEwald are not included).
+NB. Long-range electrostatics must be handled by the standard Ewald summation (SPME and HKEwald are not currently included).
