@@ -6,7 +6,7 @@ c     Module for the computation of the atomic stress
 c     virials.
 c     
 c     Author  R. Darkins - University College London
-c     Date    Feb 2013
+c     Date    Mar 2013
 c     
 c     NB. (xx, xy, xz, yy, yz, zz)
 c     
