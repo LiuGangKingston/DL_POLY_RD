@@ -1,0 +1,26 @@
+--------------------------------------------------------------
+
+	DL_POLY_RD:
+	My customised version of DL_POLY Classic 1.9.
+	
+	Robert Darkins, University College London
+	Last updated: March 2013
+
+--------------------------------------------------------------
+
+
+Features:
+
+
+Compute atomic virial stress
+----------------------------
+
+If the keyword 'virial' is included in the CONTROL file then, at the same timepoints that the HISTORY file is written to, a new file called VIRIAL is also written to. Each line in the VIRIAL file corresponds to the atomic virial stress for the corresponding atom in the HISTORY file. Note that output to the HISTORY file must also be enabled for this to work (i.e. with the 'trajectory' keyword in the CONTROL file).
+
+The components of each stress tensor are outputted in columns with the format:
+
+  xx  xy  xz  yy  yz  zz
+
+The units are k-atm.Ang^3 irrespective of the units used in the input files.
+
+NB. Long-range electrostatics must be handled by the standard Ewald summation (SPME and HK are not implemented).
